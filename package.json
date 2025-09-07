@@ -21,11 +21,16 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^14.0.0",
-    "deep-diff": "^1.0.2"
+    "deep-diff": "^1.0.2",
+    "chalk": "^5.3.0",
+    "boxen": "^8.0.1",
+    "ora": "^8.1.1",
+    "json-diff": "^1.0.6"
   },
   "devDependencies": {
     "@types/deep-diff": "^1.0.5",
     "@types/node": "^24.3.1",
+    "@types/json-diff": "^1.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
