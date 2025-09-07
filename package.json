@@ -1,0 +1,32 @@
+{
+  "name": "rdiff-debugger",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Runtime Diff Debugger for Node.js",
+  "bin": {
+    "rdiff": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "debugger",
+    "flaky tests",
+    "runtime",
+    "diff"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^14.0.0",
+    "deep-diff": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/deep-diff": "^1.0.5",
+    "@types/node": "^24.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
