@@ -4,6 +4,9 @@ node_modules
 # Build files
 dist
 
+# Examples
+examples/node_modules
+
 # IDE files
 .vscode
 .idea

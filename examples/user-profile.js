@@ -2,8 +2,8 @@ import { faker } from '@faker-js/faker';
 
 export function generateUserProfile() {
     return {
-      id: Math.floor(Math.random() * 1000), // This will be captured and should be consistent
-      timestamp: Date.now(), // This will be captured and should be consistent
+      id: Math.floor(Math.random() * 1000),
+      timestamp: Date.now(),
       user: {
         firstName: faker.person.firstName(),
         lastName: faker.person.lastName(),
@@ -27,7 +27,7 @@ export function generateUserProfile() {
         language: faker.helpers.arrayElement(['en', 'es', 'fr', 'de']),
         notifications: faker.datatype.boolean(),
       },
-      randomValue: Math.random(), // This will be captured
+      randomValue: Math.random(),
       activities: Array.from({ length: faker.number.int({ min: 1, max: 5 }) }, () => ({
         type: faker.helpers.arrayElement(['login', 'purchase', 'view', 'comment']),
         description: faker.lorem.sentence(),

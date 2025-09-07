@@ -1,9 +1,9 @@
 import pkg from "deep-diff";
+import type { RunSnapshot, CapturableFunction, DiffResult } from "./types.js";
+
 const { diff } = pkg;
 
-type RunSnapshot = Record<string, any>;
-
-export async function captureRun<T>(label: string, fn: () => Promise<T> | T): Promise<RunSnapshot> {
+export async function captureRun<T>(label: string, fn: CapturableFunction<T>): Promise<RunSnapshot> {
   const snapshot: RunSnapshot = {};
 
   // Patch common sources of nondeterminism
@@ -32,6 +32,6 @@ export async function captureRun<T>(label: string, fn: () => Promise<T> | T): Pr
   return snapshot;
 }
 
-export function compareRuns(run1: RunSnapshot, run2: RunSnapshot) {
-  return diff(run1, run2);
+export function compareRuns(run1: RunSnapshot, run2: RunSnapshot): DiffResult {
+  return diff(run1, run2) as DiffResult;
 }
