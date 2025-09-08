@@ -264,13 +264,3 @@ rdiff run /full/path/to/file.js myFunction
 
 - **Node.js** >= 16.0.0
 - **ES Modules** support (`"type": "module"` in package.json)
-
-## 📄 License
-
-MIT © [Julio Cesar Teixeira](https://github.com/JulioCesarTeixeira)
-
----
-
-**Found a bug?** [Open an issue](https://github.com/JulioCesarTeixeira/rdiff-debugger/issues)  
-**Have a question?** [Start a discussion](https://github.com/JulioCesarTeixeira/rdiff-debugger/discussions)  
-**Love the project?** [Give it a ⭐](https://github.com/JulioCesarTeixeira/rdiff-debugger)
